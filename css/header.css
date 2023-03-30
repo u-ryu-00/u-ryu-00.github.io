@@ -1,0 +1,93 @@
+header{
+    font-family: 'Lato', sans-self;
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:24vw;
+    border-bottom:1px solid #DDD;
+    color: #000;
+    background-color: #FFF;
+    z-index:100
+}
+
+header a h1 {
+    font-size: 5.2vw;
+    font-weight: 600;
+    letter-spacing: -0.3vw;
+    padding:4.4vw 4vw;
+    border-bottom:1px solid #DDD;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+header li:last-child a {
+    border-radius: 7vw;
+    width: 28.5vw;
+    padding: 2.8vw;
+    color:#FFF;
+    border:1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    text-transform:uppercase;
+}
+header li:last-child{
+    position:absolute;
+    top:2.2vw;
+    right:0;
+}
+
+header li a {
+    font-size:3.4vw;
+    display:block;
+    padding: 3vw 1.5vw;
+    color:var(--primary-color);
+    text-align: center;
+}
+
+header ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 1024px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: calc((100% - 1280px) / 2);
+        height: var(--header-height);
+    }
+
+    header a h1 {
+        font-size: 1.1em;
+        letter-spacing: -0.05em;
+        padding: 0;
+        height: 100%;
+        border-bottom: 0;
+    }
+
+    header ul {
+        align-items: center;
+        gap: 2em;
+    }
+
+    header li {
+        width: fit-content;
+    }
+
+    header li:last-child {
+        position: static;
+        padding: 0;
+    }
+
+    header li a {
+        font-size: 1em;
+        padding: 1.7em 1em;
+    }
+
+    header li:last-child a {
+        font-size: 1em;
+        padding: .7em 1.2em;
+        width: fit-content;
+    }
+}

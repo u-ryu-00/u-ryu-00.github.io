@@ -1,0 +1,174 @@
+#projects {
+    padding: 24vw 4vw;
+    background-color: #fee6a6;
+}
+
+#projects .title h3 {
+    font-family: 'Lato',sans-serif;
+    font-size: 7.2vw;
+    font-weight:700;
+    margin-bottom:3.5vw;
+}
+
+#projects .title p{
+    font-size:4vw;
+    font-weight: 400;
+    margin-bottom: 3.5vw;
+}
+
+#projects .title{
+    color: var(--primary-color);
+}
+
+#projects .thumbnail img{
+    position:absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    transform:translate3d(0,-50%,0);
+}
+
+#projects .thumbnail{
+    position:relative;
+    height:35%;
+    overflow: hidden;
+}
+
+#projects .card {
+    width: 100%;
+    height: 80vw;
+    border-radius: 7vw;
+    overflow: hidden;
+    box-shadow: 0 2vw 3vw rgba(0, 0, 0, 0.05);
+    background-color: #FFF;
+    z-index: 0;
+}
+
+#projects .card .content{
+    margin: 5vw;
+    height:30%;
+    overflow:hidden;
+    }
+
+#projects .content dt{
+    font-size:5vw;
+    font-weight:700;
+    margin-bottom:5vw;
+    color:#000;
+}
+
+#projects .content dd {
+    font-size:3.7vw;
+    font-weight:400;
+    line-height:6vw;
+    color:#666;
+}
+
+#projects .go-site{
+    font-size:3.7vw;
+    position:relative;
+    display: block;
+    margin:auto 5vw 5vw 5vw;
+    padding:5vw;
+    width:45%;
+    border:1px solid #DF872D;
+    border-radius: 7vw;
+    text-align: center;
+    color: #DF872D;
+}
+
+#projects .go-site .icon{
+    position:absolute;
+    top:50%;
+    right:11%;
+    width:3.3vw;
+    height:3.3vw;
+    transform:translate3d(0,-50%,0);
+    background: url(../mega-profile/chevron-right.png) no-repeat 50%;
+    background-size: contain;
+}
+
+@media (min-width: 1024px) {
+    #projects {
+        margin-bottom: 20em;
+        padding: 8em calc((100% - 1280px) / 2);
+        height: 26em;
+        background-color: #FEE6A6;
+    }
+    
+    #projects .title {
+        margin-bottom: 0;
+    }
+
+    #projects .title h3 {
+        font-size: 2em;
+        font-family: 'Lato', sans-serif;
+        margin-right: 0.5em;
+        font-weight: 700;
+        display: inline-block;
+    }
+    
+    #projects .title p {
+        font-size: 1.1em;
+        display: inline-block;
+    }
+    
+    #projects ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.9em;
+    }
+    
+    #projects .card {
+        width: 26em;
+        height: 27.5em;
+        border-radius: 1.5em;
+        box-shadow: 0 0.6em 1.3em rgba(0, 0, 0, 0.05);
+    }
+
+    #projects .card:hover {
+        transform: translate3d(0, -1em, 0);
+        box-shadow: 0 0.6em 1.3em rgba(0, 0, 0, 0.25);
+    }
+    
+    #projects .thumbnail {
+        height: 45%;
+    }
+    
+    #projects .thumbnail img {
+        left: 0;
+        width: 100%;
+        transform: translate3d(0, -50%, 0);
+    }
+    
+    #projects .card .content {
+        display: flex;
+        flex-direction: column;
+        margin: 1.6em;
+        align-items: center;
+    }
+    
+    #projects .content dt {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-bottom: 1.2em;
+    }
+    
+    #projects .content dd {
+        font-size: 1.1em;
+        line-height: 1.6em;
+    }
+    
+    #projects .go-site {
+        font-size: 0.9em;
+        margin: 0 auto;
+        width: fit-content;
+        padding: 1em 2.6em;
+        border-radius: 4em;
+    }
+    
+    #projects .go-site .icon {
+        width: 0.8em;
+        height: 0.8em;
+    }
+}
