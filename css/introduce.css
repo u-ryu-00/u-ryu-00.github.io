@@ -1,0 +1,179 @@
+#introduce {
+    padding: 25.6vw 4.5vw 1.6vw;
+}
+
+#introduce .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#introduce .avatar {
+    position: relative;
+    margin: 11vw auto;
+    width: 42vw;
+    height: 42vw;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#introduce .avatar img {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+}
+
+#introduce h2 {
+    font-size: 4.2vw;
+    font-weight: 700;
+    letter-spacing: -0.15vw;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+#introduce h2 strong {
+    font-size: 7.8vw;
+    display: block;
+    margin-right: 1.6vw;
+    margin-bottom: 3.7vw;
+}
+
+#introduce p {
+    font-size: 3.8vw;
+    line-height: 7vw;
+    width: 85vw;
+    text-align: center;
+
+}
+
+#introduce .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.1vw;
+    padding: 5vw 0 10vw 0;
+    border-bottom: 1px solid #DDD;
+}
+
+#introduce .tags li {   
+    font-size: 3.8vw;
+    padding: 2.9vw 4.5vw;
+    border-radius: 10vw;
+    color: #DF872D;
+    background-color: #FEE6A6;
+}
+
+#introduce address {
+    font-style: normal;
+    padding: 12vw 0;
+    color: var(--dark-gray-color);
+}
+
+#introduce address dt, dd {
+    font-size: 3.7vw;
+    display: inline-block;
+    margin-left: 4vw;
+    padding-bottom: 7vw;
+}
+
+#introduce address dt {
+    font-weight: 700;
+    width: 25vw;
+}
+
+#introduce address dd {
+    font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+    #introduce {
+        display: grid;
+        grid-template: 
+        "avatar about about about about"
+        "avatar address address address contact"
+        ;
+        padding-top: calc(11.5em + var(--header-height));
+        padding-bottom: 11.5em;
+        padding-inline: calc((100% - 1280px) / 2);
+        width: 100%;
+    }
+    
+    #introduce .about {
+        grid-area: about;
+    }
+    
+    #introduce .avatar {
+        grid-area: avatar;
+        margin: 0 3em 0 0;
+        width: 19em;
+        height: 19em;
+    }
+    
+    #introduce .avatar img {
+        position: absolute;
+        height: 100%;
+        left: 50%;
+        transform: translate3d(-50%, 0, 0);
+    }
+    
+    #introduce .about h2 {
+        font-size: 1em;
+        font-weight: 700;
+        margin-bottom: 0.8em;
+        width: 100%;
+        letter-spacing: 0.01em;
+        text-align: start;
+    }
+    
+    #introduce .about h2 strong {
+        font-size: 2em;
+        display: inline;
+        margin-right: 1em;
+    }
+    
+    #introduce .about p {
+        font-size: 1.1em;
+        line-height: 1.2em;
+        width: 100%;
+        text-align: start;
+    }
+    
+    #introduce .about .tags {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1em;
+        padding: 1.3em 0 2.8em 0;
+        width: 100%;
+        border-bottom: 1px solid #DDD;
+    }
+
+    #introduce .about .tags li {   
+        font-size: 1em;
+        padding: 0.7em 1.3em;
+        border-radius: 1.3em;
+        color: #DF872D;
+        background-color: #FEE6A6;
+    }
+
+    #introduce address {
+        grid-area: address;
+        padding: 3em 0;
+    }
+    
+    #introduce address dl {
+        display: grid;
+        grid-template-columns: 15% 40% 15% auto;
+    }
+    
+    #introduce address dt, dd {
+        font-size: 1em;
+        margin-left: 0;
+        padding-bottom: 1.5em;
+    }
+    
+    #introduce address dt {
+        width: fit-content;
+    }
+}

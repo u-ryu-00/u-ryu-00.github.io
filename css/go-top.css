@@ -1,0 +1,31 @@
+aside .go-top{
+    position: fixed;
+    bottom:25vw;
+    right:4vw;
+    display: block;
+    width:11vw;
+    height:11vw;
+    background: url(../mega-profile/top-orange.png) no-repeat 0 0;
+    background-size: contain;
+    text-indent: -10000px;
+    overflow:hidden;
+    z-index: 100;
+}
+
+aside .go-top:hover {
+    background-image: url(../mega-profile/top-white.png);
+}
+
+aside .go-top:active {
+    background-image: url(../mega-profile/top-orange.png);
+}
+
+@media (min-width: 1024px){
+    aside .go-top{
+        bottom:25%;
+        right:10%;
+        display: block;
+        width: 3.7em;
+        height: 3.7em;
+    }
+}
