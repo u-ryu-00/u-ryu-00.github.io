@@ -93,7 +93,7 @@
 
 @media(min-width: 1024px){
     #contact-me {
-        padding:9em clac((100%-1280%) / 2) 2.5em;
+        padding: 9em calc((100% - 1280px) / 2) 2.5em;         
     }
 
     #contact-me .nudge{

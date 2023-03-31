@@ -29,3 +29,13 @@ aside .go-top:active {
         height: 3.7em;
     }
 }
+
+@media (min-width: 1280px) {
+    aside .go-top {
+        bottom: 25%;
+        right: calc((100% - 1280px - 10em) / 2); 
+        display: block;
+        width: 3.7em;
+        height: 3.7em;
+    }
+}
